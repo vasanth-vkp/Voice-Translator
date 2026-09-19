@@ -24,6 +24,6 @@ echo.
 start "" cmd /c "timeout /t 2 /nobreak >nul & start http://localhost:8000"
 
 :: Start Uvicorn server
-".\venv\Scripts\python.exe" -m uvicorn api:app --host 127.0.0.1 --port 8000 --reload
+".\venv\Scripts\python.exe" -m uvicorn api.index:app --host 127.0.0.1 --port 8000 --reload
 
 pause

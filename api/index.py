@@ -1,7 +1,7 @@
 """
 =============================================================
   VoiceBridge Real-Time Voice Translation API
-  FastAPI Backend (Python 3.14 Compatible)
+  FastAPI Backend (Vercel Serverless & Local Uvicorn Ready)
 =============================================================
 """
 
@@ -14,10 +14,12 @@ from fastapi.responses import Response, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-# Ensure core package can be imported
+# Ensure repository root is in sys.path so 'core' can be imported
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-if CURRENT_DIR not in sys.path:
-    sys.path.insert(0, CURRENT_DIR)
+ROOT_DIR = os.path.dirname(CURRENT_DIR)
+for p in [ROOT_DIR, CURRENT_DIR]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
 
 from core.translator_engine import (
     LanguageDetector,
@@ -155,7 +157,7 @@ def translate_text(req: TranslateRequest):
             confidence = 0.0
 
     try:
-        # Crucial fix: Pass req.source ("auto") directly to Google Translator rather than overriding it with langdetect's result
+        # Pass req.source ("auto") directly to Google Translator rather than overriding it with langdetect's result
         result = translator.translate(
             text,
             target_lang=req.target,
@@ -255,9 +257,14 @@ def speak_audio_get(text: str, lang: str = "en"):
     )
 
 
-# Mount static frontend directory
-WEB_DIR = os.path.join(CURRENT_DIR, "web")
-if os.path.exists(WEB_DIR):
+# Mount static frontend directory when running as local standalone server
+# (On Vercel, static files in /public are served automatically by Vercel's global CDN)
+PUBLIC_DIR = os.path.join(ROOT_DIR, "public")
+WEB_DIR = os.path.join(ROOT_DIR, "web")
+
+if os.path.exists(PUBLIC_DIR):
+    app.mount("/", StaticFiles(directory=PUBLIC_DIR, html=True), name="static")
+elif os.path.exists(WEB_DIR):
     app.mount("/", StaticFiles(directory=WEB_DIR, html=True), name="static")
 
 if __name__ == "__main__":

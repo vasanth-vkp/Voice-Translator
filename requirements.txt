@@ -1,28 +1,21 @@
 # ─────────────────────────────────────────────
-#  Real-Time Voice Translation System
-#  requirements.txt (Python 3.14 compatible)
+#  VoiceBridge - Requirements
 # ─────────────────────────────────────────────
 
-# Audio Recording & Signal Processing
-sounddevice>=0.5.0
-scipy>=1.15.0
-numpy>=2.0.0
-audioop-lts>=0.2.0; python_version >= '3.13'
-
-# Speech Recognition
-SpeechRecognition>=3.10.0
+# Web Framework & Serverless API
+fastapi>=0.110.0
+uvicorn>=0.30.0
+python-multipart>=0.0.9
+requests>=2.31.0
 
 # Translation & Language Detection
 deep-translator>=1.11.0
 langdetect>=1.0.9
 
-# Text-to-Speech
+# Neural Text-to-Speech & Speech Recognition
 gTTS>=2.5.0
-pyttsx3>=2.90
+SpeechRecognition>=3.10.0
 
-# Web Application
-streamlit>=1.39.0
-fastapi>=0.110.0
-uvicorn>=0.30.0
-python-multipart>=0.0.9
-pandas>=2.0.0
+# Optional Local Mic & Desktop packages (Windows only)
+sounddevice>=0.5.0; sys_platform == 'win32'
+pyttsx3>=2.90; sys_platform == 'win32'
