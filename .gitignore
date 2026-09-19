@@ -1,0 +1,39 @@
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Node / JS dependencies & temporary test scripts
+node_modules/
+package-lock.json
+package.json
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Audio and temporary cache files
+*.mp3
+*.wav
+tts_*.mp3
+temp_*.mp3
+temp_*.wav
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Log files
+*.log
+
+# Test screenshots
+combobox_*.png
+hi_translation_success.png
+rate_limit_error_banner.png
+
+# IDE / Editor directories
+.vscode/
+.idea/

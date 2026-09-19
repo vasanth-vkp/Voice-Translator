@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-bright":"#353944","on-surface":"#dfe2f1","surface-container-highest":"#313540","inverse-on-surface":"#2c303b","surface-variant":"#313540","on-secondary-fixed":"#001f26","primary-container":"#8083ff","tertiary-fixed":"#e0e0ff","error":"#ffb4ab","on-tertiary-fixed":"#000767","background":"#0f131d","on-primary-fixed-variant":"#2f2ebe","on-primary":"#1000a9","tertiary":"#bdc2ff","inverse-primary":"#494bd6","secondary-fixed":"#acedff","inverse-surface":"#dfe2f1","surface-container-high":"#262a35","on-error-container":"#ffdad6","surface-container":"#1c1f2a","primary-fixed-dim":"#c0c1ff","tertiary-container":"#7c87f3","on-primary-container":"#0d0096","primary-fixed":"#e1e0ff","surface-tint":"#c0c1ff","outline-variant":"#464554","secondary-fixed-dim":"#4cd7f6","on-tertiary-fixed-variant":"#2f3aa3","secondary-container":"#03b5d3","on-tertiary-container":"#081486","on-surface-variant":"#c7c4d7","tertiary-fixed-dim":"#bdc2ff","surface":"#0f131d","surface-container-lowest":"#0a0e18","outline":"#908fa0","surface-dim":"#0f131d","secondary":"#4cd7f6","on-secondary":"#003640","on-secondary-fixed-variant":"#004e5c","on-error":"#690005","on-tertiary":"#131e8c","on-background":"#dfe2f1","primary":"#c0c1ff","on-primary-fixed":"#07006c","error-container":"#93000a","surface-container-low":"#171b26","on-secondary-container":"#00424e"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter":"1rem","margin-tablet":"2rem","gutter-desktop":"2rem","space-xl":"2.5rem","space-md":"1rem","gutter-tablet":"1.5rem","space-sm":"0.5rem","margin":"1rem","margin-desktop":"3rem","space-xs":"0.25rem"},"fontFamily":{"headline-lg-mobile":["Inter"],"title-md":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"display-lg":["Inter"],"display-lg-mobile":["Inter"],"body-md":["Inter"],"label-lg":["Inter"],"label-md":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"600"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="h-20 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-max"><img alt="VoiceBridge Brand Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XMdeh45ldBoGYrT2QTcYKnGf5zQNslYA60zDHQ7JIjor8EL_4zXyBdahMwhttNx-zUicHwW31T9DrIqxO35jnlZbOB9iQcfcUQljka6EfWsL6ReUP9Ow2G7TPJD3cUJBCCGMHQ2Y5CbL7I0-A6pqFQyeyEF1W92tPrr-NpeFhjiXILE7KEDZS7OrakoZ9nNwiIiZ6-wYFrrrI0FWytq7zOyEN28H-uMjf-AF3VA_VXqFYkVqpk9iU_rQE"/><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">VoiceBridge</span><span class="hidden sm:inline-flex items-center px-space-sm py-space-xs rounded-full bg-surface-container-high text-secondary font-label-md text-label-md"><span class="w-1.5 h-1.5 rounded-full bg-secondary mr-1.5 animate-pulse"></span>Real-Time Audio</span></div></div><div class="hidden md:flex items-center justify-center flex-1"><nav class="flex items-center p-space-xs rounded-full bg-surface-container-low" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm"><a class="px-space-lg py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="translator" href="#">Translator</a><a class="px-space-lg py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="history" href="#">History</a><a aria-current="page" class="px-space-lg py-space-xs rounded-full transition-colors bg-primary-container text-on-primary-container font-semibold shadow-sm" data-path="settings" href="#">Settings</a></nav></div><div class="flex items-center gap-space-md min-w-max"><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-low text-secondary font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-secondary">bolt</span><span>12ms Ultra-low latency</span></div><button aria-label="Toggle theme" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-secondary hover:bg-surface-container hover:text-on-surface transition-colors shadow-[0_0_12px_rgba(76,215,246,0.2)]" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><button aria-label="Select audio output" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><a aria-label="Settings gear" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="md:hidden flex items-center justify-around py-space-xs bg-surface-container-lowest"><nav class="flex items-center w-full justify-around px-gutter" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="translator" href="#">Translator</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="history" href="#">History</a><a aria-current="page" class="px-space-md py-space-xs rounded-full transition-colors bg-primary-container text-on-primary-container font-semibold" data-path="settings" href="#">Settings</a></nav></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Canvas -->
+<div class="relative w-full overflow-hidden px-gutter sm:px-margin-tablet lg:px-margin-desktop py-space-lg">
+<div class="absolute top-12 left-1/4 w-96 h-96 rounded-full bg-secondary/5 blur-[120px] pointer-events-none -z-10"></div>
+<div class="absolute top-48 right-1/4 w-[420px] h-[420px] rounded-full bg-primary/5 blur-[140px] pointer-events-none -z-10"></div>
+<!-- Header Section with Metadata Texture -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_10px_rgba(76,215,246,0.8)]"></span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Audio Telemetry • Config Engine v4.8</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Settings</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Configure neural voice engines, acoustic input hardware, synthesis modulation, and cognitive accessibility controls.</p>
+</div>
+<!-- Diagnostic Quick Widget -->
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-space-sm rounded-full shadow-sm">
+<div class="flex flex-col items-start">
+<span class="font-label-md text-label-md text-on-surface-variant leading-none">Neural Buffer</span>
+<span class="font-label-lg text-label-lg text-secondary font-semibold">12ms ultra-low</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">graphic_eq</span>
+</div>
+</div>
+</div>
+<!-- Main Settings Architecture: Side Navigator + Bento Panel Stack -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Segmented Navigation Rail (Desktop sticky / Mobile horizontal scroller) -->
+<nav aria-label="Settings Sections" class="lg:col-span-3 sticky top-24 z-20 flex lg:flex-col overflow-x-auto lg:overflow-visible gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md p-space-xs rounded-lg lg:rounded-DEFAULT shadow-md">
+<button class="tab-btn active-tab flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-left font-label-lg text-label-lg transition-all whitespace-nowrap bg-primary-container text-on-primary-container shadow-sm" id="tab-btn-audio" onclick="switchTab('audio')" type="button">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+<span>Voice &amp; Audio Input</span>
+</button>
+<button class="tab-btn flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-left font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all whitespace-nowrap" id="tab-btn-language" onclick="switchTab('language')" type="button">
+<span class="material-symbols-outlined text-[20px]">translate</span>
+<span>Language &amp; Translation</span>
+</button>
+<button class="tab-btn flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-left font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all whitespace-nowrap" id="tab-btn-synthesis" onclick="switchTab('synthesis')" type="button">
+<span class="material-symbols-outlined text-[20px]">record_voice_over</span>
+<span>Speech Synthesis (TTS)</span>
+</button>
+<button class="tab-btn flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-left font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all whitespace-nowrap" id="tab-btn-appearance" onclick="switchTab('appearance')" type="button">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+<span>Appearance &amp; Theme</span>
+</button>
+</nav>
+<!-- Panes Container -->
+<div class="lg:col-span-9 flex flex-col gap-space-xl">
+<!-- SECTION 1: Voice & Audio Input -->
+<section class="settings-section flex flex-col gap-space-lg" id="section-audio">
+<!-- Section Banner Card -->
+<div class="bg-surface-container p-space-lg rounded-DEFAULT shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Voice &amp; Acoustic Input</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant bg-surface-container-high px-space-sm py-space-xs rounded-full">Active Interface</span>
+</div>
+<!-- Microphone Hardware Selection -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface" for="mic-select">Input Microphone Device</label>
+<div class="relative w-full">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface px-space-md py-space-sm rounded-full font-body-md text-body-md shadow-inner focus:outline-none focus:bg-surface-container-high pr-12 cursor-pointer transition-colors" id="mic-select">
+<option selected="">Default - Studio USB Condenser Mic (High Definition Audio)</option>
+<option>Array Microphone (Realtek(R) Audio)</option>
+<option>Bluetooth Hands-Free AG Headset (VoiceBridge Link)</option>
+<option>Virtual DSP Direct Loopback</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<!-- Live Input Volume VU Visualizer -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">graphic_eq</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Input Gain Level &amp; Test Telemetry</span>
+</div>
+<button class="text-secondary hover:text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors" id="mic-test-btn" onclick="toggleMicTest()" type="button">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span id="mic-test-text">Test Input</span>
+</button>
+</div>
+<!-- Animated Normalized Audio Bars Meter -->
+<div class="h-9 w-full bg-surface-container-low rounded-full px-space-md flex items-center justify-between gap-1 overflow-hidden shadow-inner" id="meter-bars">
+<!-- 28 Adaptive Amplitude Nodes -->
+<div class="h-2 w-1.5 rounded-full bg-secondary/30 transition-all duration-150"></div>
+<div class="h-3 w-1.5 rounded-full bg-secondary/30 transition-all duration-150"></div>
+<div class="h-2 w-1.5 rounded-full bg-secondary/40 transition-all duration-150"></div>
+<div class="h-4 w-1.5 rounded-full bg-secondary/40 transition-all duration-150"></div>
+<div class="h-5 w-1.5 rounded-full bg-secondary/60 transition-all duration-150"></div>
+<div class="h-3 w-1.5 rounded-full bg-secondary/50 transition-all duration-150"></div>
+<div class="h-6 w-1.5 rounded-full bg-secondary/70 transition-all duration-150"></div>
+<div class="h-7 w-1.5 rounded-full bg-secondary/80 transition-all duration-150"></div>
+<div class="h-4 w-1.5 rounded-full bg-secondary/70 transition-all duration-150"></div>
+<div class="h-6 w-1.5 rounded-full bg-secondary transition-all duration-150"></div>
+<div class="h-8 w-1.5 rounded-full bg-secondary transition-all duration-150 shadow-[0_0_8px_rgba(76,215,246,0.6)]"></div>
+<div class="h-5 w-1.5 rounded-full bg-secondary transition-all duration-150"></div>
+<div class="h-7 w-1.5 rounded-full bg-secondary transition-all duration-150"></div>
+<div class="h-6 w-1.5 rounded-full bg-secondary/80 transition-all duration-150"></div>
+<div class="h-4 w-1.5 rounded-full bg-secondary/60 transition-all duration-150"></div>
+<div class="h-5 w-1.5 rounded-full bg-secondary/50 transition-all duration-150"></div>
+<div class="h-3 w-1.5 rounded-full bg-secondary/40 transition-all duration-150"></div>
+<div class="h-2 w-1.5 rounded-full bg-secondary/30 transition-all duration-150"></div>
+<div class="h-2 w-1.5 rounded-full bg-secondary/20 transition-all duration-150"></div>
+<div class="h-1.5 w-1.5 rounded-full bg-secondary/20 transition-all duration-150"></div>
+<div class="h-1 w-1.5 rounded-full bg-surface-bright transition-all duration-150"></div>
+<div class="h-1 w-1.5 rounded-full bg-surface-bright transition-all duration-150"></div>
+<div class="h-1 w-1.5 rounded-full bg-surface-bright transition-all duration-150"></div>
+<div class="h-1 w-1.5 rounded-full bg-surface-bright transition-all duration-150"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md px-1">
+<span>-48 dB</span>
+<span>-18 dB (Nominal Speech)</span>
+<span>0 dB (Clip)</span>
+</div>
+</div>
+</div>
+<!-- Processing & VAD Bento Subgrid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-desktop">
+<!-- Noise Filtering Toggles -->
+<div class="bg-surface-container p-space-lg rounded-DEFAULT shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">hearing</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-medium">Acoustic Conditioning</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Real-time spectral subtraction &amp; room cancellation.</p>
+</div>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Toggle 1: Noise Suppression -->
+<div class="flex items-center justify-between p-space-sm rounded-full bg-surface-container-low">
+<div class="flex flex-col pl-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface">Neural Noise Suppression</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Deep RNN background removal</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer mr-1">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest rounded-full peer peer-checked:bg-secondary transition-colors duration-200 after:content-[''] after:absolute after:top-0.5 after:left-[2px] peer-checked:after:left-[26px] after:bg-on-secondary after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</label>
+</div>
+<!-- Toggle 2: Acoustic Echo Cancellation -->
+<div class="flex items-center justify-between p-space-sm rounded-full bg-surface-container-low">
+<div class="flex flex-col pl-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface">Echo Cancellation (AEC)</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Prevents speaker acoustic bleed</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer mr-1">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest rounded-full peer peer-checked:bg-secondary transition-colors duration-200 after:content-[''] after:absolute after:top-0.5 after:left-[2px] peer-checked:after:left-[26px] after:bg-on-secondary after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Voice Activity Detection (VAD) Sensitivity -->
+<div class="bg-surface-container p-space-lg rounded-DEFAULT shadow-md flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-medium">VAD Sensitivity Threshold</span>
+<span class="font-label-md text-label-md text-secondary bg-surface-container-low px-space-sm py-space-xs rounded-full" id="vad-label">Balanced (Default)</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant mb-space-md">Sets the audio decibel gate for automatic speech segment capture.</p>
+</div>
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-md rounded-DEFAULT">
+<input class="w-full accent-secondary cursor-pointer h-2 bg-surface-container-highest rounded-full appearance-none" id="vad-slider" max="3" min="1" oninput="updateVad(this.value)" step="1" type="range" value="2"/>
+<div class="flex justify-between font-label-md text-label-md text-on-surface-variant pt-1">
+<span class="cursor-pointer" onclick="document.getElementById('vad-slider').value=1;updateVad(1)">Low (Loud Rooms)</span>
+<span class="cursor-pointer font-semibold text-secondary" onclick="document.getElementById('vad-slider').value=2;updateVad(2)">Balanced</span>
+<span class="cursor-pointer" onclick="document.getElementById('vad-slider').value=3;updateVad(3)">High (Whispers)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Language & Translation -->
+<section class="settings-section flex flex-col gap-space-lg" id="section-language">
+<div class="bg-surface-container p-space-lg rounded-DEFAULT shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Language &amp; Translation Engine</h2>
+</div>
+<!-- Two-column Language Pair Configuration -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Source Language -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface" for="src-lang">Default Source Spoken Language</label>
+<div class="relative w-full">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface px-space-md py-space-sm rounded-full font-body-md text-body-md shadow-inner focus:outline-none focus:bg-surface-container-high pr-12 cursor-pointer transition-colors" id="src-lang">
+<option selected="">Auto-detect (Recommended)</option>
+<option>English (United States)</option>
+<option>English (United Kingdom)</option>
+<option>French (France)</option>
+<option>German (Standard)</option>
+<option>Japanese (Tokyo)</option>
+<option>Mandarin Chinese (Simplified)</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<!-- Target Language -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface" for="target-lang">Default Target Translation</label>
+<div class="relative w-full">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface px-space-md py-space-sm rounded-full font-body-md text-body-md shadow-inner focus:outline-none focus:bg-surface-container-high pr-12 cursor-pointer transition-colors" id="target-lang">
+<option selected="">Spanish (Latin America)</option>
+<option>Spanish (Castilian)</option>
+<option>Portuguese (Brazil)</option>
+<option>German (Germany)</option>
+<option>Italian (Standard)</option>
+<option>Japanese (Standard)</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Translation Behavior Switches -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Auto Play Audio -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col justify-between gap-space-sm">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-[20px]">volume_up</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-highest rounded-full peer peer-checked:bg-primary transition-colors duration-200 after:content-[''] after:absolute after:top-0.5 after:left-[2px] peer-checked:after:left-[22px] after:bg-on-primary after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Auto-play Synthesized Audio</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Speaks translation instantly upon sentence boundary.</p>
+</div>
+</div>
+<!-- Profanity Filter -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col justify-between gap-space-sm">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-[20px]">security</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-highest rounded-full peer peer-checked:bg-primary transition-colors duration-200 after:content-[''] after:absolute after:top-0.5 after:left-[2px] peer-checked:after:left-[22px] after:bg-on-primary after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Profanity Masking</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Sanitizes sensitive terms with polite context markers.</p>
+</div>
+</div>
+<!-- Colloquialism Smoothing -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col justify-between gap-space-sm">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-[20px]">auto_fix_high</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-highest rounded-full peer peer-checked:bg-primary transition-colors duration-200 after:content-[''] after:absolute after:top-0.5 after:left-[2px] peer-checked:after:left-[22px] after:bg-on-primary after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Colloquial Smoothing</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Converts local slang into cross-cultural equivalents.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Speech Synthesis (TTS) -->
+<section class="settings-section flex flex-col gap-space-lg" id="section-synthesis">
+<div class="bg-surface-container p-space-lg rounded-DEFAULT shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Speech Synthesis Engine (TTS)</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Neural Voice Models</span>
+</div>
+<!-- Voice Persona Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Persona 1: Mateo (Active) -->
+<div class="voice-card bg-surface-container-high rounded-DEFAULT p-space-md shadow-md cursor-pointer transition-all duration-200 relative overflow-hidden flex flex-col justify-between" id="voice-mateo" onclick="selectVoice('mateo')">
+<div class="absolute top-0 right-0 p-space-sm text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Mateo, a friendly bilingual audio narrator with warm expression in an acoustic studio, lit with subtle indigo rim light, clean dark aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWO3KiKiSF6S1jNjZ7hM6eHfTiOKWxB87pxKpaPer0KatAslIx9mzSdarMRlafIyMKHN1QXN_H0Q8H-g_kTRvM8qyI51mgenml8Frj_LpE60vIuo0wd7hQnWBrBQUp5WOvCdSZ0vvdGBBIrcYbyX7AToAXg6tSnzHL1FpehZ7eWjah3ic6JyyFNe8TvNtORyWH2Oy6VNbEa-EFLsaOE-_OdOo9W8OTHyH50eooNI6lI1gWg17_n5Biyg"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate">Mateo</h3>
+<p class="font-label-md text-label-md text-secondary truncate">Natural &amp; Warm</p>
+</div>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant mb-space-md">Optimized for fluid narrative flow and casual conversation.</p>
+<button class="w-full flex items-center justify-center gap-space-xs bg-surface-container-lowest hover:bg-surface-bright text-on-surface px-space-md py-space-xs rounded-full font-label-md text-label-md transition-colors" onclick="playVoiceTest(event, 'Mateo')" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">volume_up</span>
+<span>Test Voice</span>
+</button>
+</div>
+<!-- Persona 2: Sofia -->
+<div class="voice-card bg-surface-container-low rounded-DEFAULT p-space-md shadow-sm cursor-pointer transition-all duration-200 relative overflow-hidden flex flex-col justify-between hover:bg-surface-container-high" id="voice-sofia" onclick="selectVoice('sofia')">
+<div class="absolute top-0 right-0 p-space-sm text-outline hidden">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of Sofia, professional voice actor with headphones around neck, dark nocturnal background with subtle cyan lighting, sleek tech feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDorkGnse0eWedhW-l4TH94gdTkOIC_IaoAurnyFrovWfED159xrI_vqqHt_al7sveoXdYifgqHlVVC7wKKzhwMrZXGLstN7MI4R9v8eF2o8H3tdQ0MRqAfPgCt1ccBy2CydEJJp5k59x_p90auMmbTBgCyM_ZPmeI5A0DFtyrPpHU4fXGLVVVNUsMmpGhcpivFEXYnLX8QoQb6bjA8NXosWdV95WG2L_xiFnnf1G69SuvyofxMM0Rf5Q"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate">Sofia</h3>
+<p class="font-label-md text-label-md text-on-surface-variant truncate">Expressive &amp; Dynamic</p>
+</div>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant mb-space-md">High dynamic range, rich prosodic inflection for meetings.</p>
+<button class="w-full flex items-center justify-center gap-space-xs bg-surface-container-lowest hover:bg-surface-bright text-on-surface px-space-md py-space-xs rounded-full font-label-md text-label-md transition-colors" onclick="playVoiceTest(event, 'Sofia')" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">volume_up</span>
+<span>Test Voice</span>
+</button>
+</div>
+<!-- Persona 3: Alex -->
+<div class="voice-card bg-surface-container-low rounded-DEFAULT p-space-md shadow-sm cursor-pointer transition-all duration-200 relative overflow-hidden flex flex-col justify-between hover:bg-surface-container-high" id="voice-alex" onclick="selectVoice('alex')">
+<div class="absolute top-0 right-0 p-space-sm text-outline hidden">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Portrait of Alex, clean cut broadcast anchor, confident gaze, studio microphone silhouette, deep slate ambient illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATfuNUAkr2YIPML2sQEl5nv04R95-NMoCL97eSmctSho6fVjmlJ8HXOj4W3y8qS3cnW18IBQmyGGugpy8OVImKAZf54UI_tdJcyIyU6SqvWq7pGJ2rlmJSDdWiWIbkqVrXiY6tJ9jarMzZGgmoWMmypvHdg_MVLtwBxLz30NpIdlO9ScXtJGb24ZfiM-d5aU6lhZhZY1PjH6l2Ul7InPDpLsrDN-vX00xiGlJGeii2PsgCVylEroG4jA"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate">Alex</h3>
+<p class="font-label-md text-label-md text-on-surface-variant truncate">Clear &amp; Neutral</p>
+</div>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant mb-space-md">Ultra-crisp articulation suitable for medical and technical dialogues.</p>
+<button class="w-full flex items-center justify-center gap-space-xs bg-surface-container-lowest hover:bg-surface-bright text-on-surface px-space-md py-space-xs rounded-full font-label-md text-label-md transition-colors" onclick="playVoiceTest(event, 'Alex')" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">volume_up</span>
+<span>Test Voice</span>
+</button>
+</div>
+</div>
+<!-- TTS Modulation Sliders -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Speech Speed Modulation -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col gap-space-sm">
+<div class="flex justify-between items-center">
+<span class="font-label-lg text-label-lg text-on-surface">Playback Speed</span>
+<span class="font-label-md text-label-md text-secondary font-semibold" id="speed-label">1.0x (Normal)</span>
+</div>
+<div class="flex items-center justify-between gap-space-xs mt-space-xs">
+<button class="speed-pill px-space-sm py-space-xs rounded-full text-center flex-1 bg-surface-container font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" onclick="setSpeed(0.75)" type="button">0.75x</button>
+<button class="speed-pill px-space-sm py-space-xs rounded-full text-center flex-1 bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold transition-colors shadow-sm" onclick="setSpeed(1.0)" type="button">1.0x</button>
+<button class="speed-pill px-space-sm py-space-xs rounded-full text-center flex-1 bg-surface-container font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" onclick="setSpeed(1.25)" type="button">1.25x</button>
+<button class="speed-pill px-space-sm py-space-xs rounded-full text-center flex-1 bg-surface-container font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" onclick="setSpeed(1.5)" type="button">1.5x</button>
+</div>
+</div>
+<!-- Pitch Modulation -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col gap-space-sm">
+<div class="flex justify-between items-center">
+<span class="font-label-lg text-label-lg text-on-surface">Voice Pitch Shift</span>
+<span class="font-label-md text-label-md text-secondary font-semibold" id="pitch-label">0 semitones</span>
+</div>
+<div class="flex items-center gap-space-md mt-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">music_note</span>
+<input class="w-full accent-secondary cursor-pointer h-2 bg-surface-container-highest rounded-full appearance-none" id="pitch-slider" max="6" min="-6" oninput="updatePitch(this.value)" step="1" type="range" value="0"/>
+<span class="material-symbols-outlined text-on-surface-variant text-[24px]">music_note</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Appearance & Theme -->
+<section class="settings-section flex flex-col gap-space-lg" id="section-appearance">
+<div class="bg-surface-container p-space-lg rounded-DEFAULT shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Appearance &amp; Accessibility</h2>
+</div>
+<!-- Visual Theme Preview Tiles -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Dark Mode (Active) -->
+<div class="theme-card bg-surface-container-high rounded-DEFAULT p-space-md shadow-md cursor-pointer transition-all flex flex-col gap-space-sm" id="theme-dark" onclick="selectTheme('dark')">
+<div class="h-24 w-full rounded-DEFAULT bg-surface-container-lowest p-space-xs flex flex-col gap-1.5 shadow-inner">
+<div class="h-3 w-1/3 bg-surface-container-highest rounded-full"></div>
+<div class="h-6 w-full bg-surface-container-low rounded-DEFAULT flex items-center px-2 gap-1">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<div class="w-12 h-1.5 bg-surface-container-highest rounded-full"></div>
+</div>
+<div class="h-4 w-2/3 bg-primary-container/20 rounded-full"></div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Dark</h3>
+<p class="font-label-md text-label-md text-secondary">Calm Night</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Light Mode -->
+<div class="theme-card bg-surface-container-low rounded-DEFAULT p-space-md shadow-sm cursor-pointer transition-all flex flex-col gap-space-sm hover:bg-surface-container-high" id="theme-light" onclick="selectTheme('light')">
+<div class="h-24 w-full rounded-DEFAULT bg-inverse-surface p-space-xs flex flex-col gap-1.5 shadow-inner">
+<div class="h-3 w-1/3 bg-inverse-on-surface/20 rounded-full"></div>
+<div class="h-6 w-full bg-surface-bright/20 rounded-DEFAULT flex items-center px-2 gap-1">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-12 h-1.5 bg-inverse-on-surface/30 rounded-full"></div>
+</div>
+<div class="h-4 w-2/3 bg-secondary/30 rounded-full"></div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Light</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Clean Dawn</p>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] hidden">check_circle</span>
+</div>
+</div>
+<!-- System Sync -->
+<div class="theme-card bg-surface-container-low rounded-DEFAULT p-space-md shadow-sm cursor-pointer transition-all flex flex-col gap-space-sm hover:bg-surface-container-high" id="theme-system" onclick="selectTheme('system')">
+<div class="h-24 w-full rounded-DEFAULT bg-gradient-to-r from-surface-container-lowest to-surface-bright p-space-xs flex flex-col gap-1.5 shadow-inner">
+<div class="h-3 w-1/3 bg-on-surface-variant/30 rounded-full"></div>
+<div class="h-6 w-full bg-surface-container-high/60 rounded-DEFAULT flex items-center px-2 gap-1">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<div class="w-12 h-1.5 bg-surface-container-highest rounded-full"></div>
+</div>
+<div class="h-4 w-2/3 bg-primary/20 rounded-full"></div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">System Sync</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Auto Schedule</p>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] hidden">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Accessibility Switches -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- High Contrast Mode -->
+<div class="flex items-center justify-between p-space-md rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">contrast</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">High Contrast Mode</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Elevates text luminescence to exceed WCAG AAA standards for visual clarity.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer ml-4">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest rounded-full peer peer-checked:bg-secondary transition-colors duration-200 after:content-[''] after:absolute after:top-0.5 after:left-[2px] peer-checked:after:left-[26px] after:bg-on-secondary after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</label>
+</div>
+<!-- Large Text / Reading Aid -->
+<div class="flex items-center justify-between p-space-md rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">format_size</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Large Text &amp; Reading Aid</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Expands live transcription typography hierarchy by 15% and increases line clearance.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer ml-4">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest rounded-full peer peer-checked:bg-secondary transition-colors duration-200 after:content-[''] after:absolute after:top-0.5 after:left-[2px] peer-checked:after:left-[26px] after:bg-on-secondary after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Atmospheric Action Bar -->
+<div class="sticky bottom-6 z-30 w-full bg-surface-container/90 backdrop-blur-xl p-space-md rounded-DEFAULT shadow-[0_12px_40px_rgba(0,0,0,0.6)] flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md hidden sm:inline">Settings ready for deployment</span>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" onclick="resetDefaults()" type="button">
+              Reset to Defaults
+            </button>
+<button class="relative group flex items-center gap-space-xs px-space-xl py-space-sm rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg font-semibold shadow-[0_0_24px_-2px_rgba(128,131,255,0.45)] hover:shadow-[0_0_32px_rgba(128,131,255,0.7)] transition-all active:scale-[0.98]" id="save-button" onclick="saveSettings()" type="button">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Save Changes</span>
+</button>
+</div>
+</div>
+<!-- Inline Toast Notification (Hidden by default) -->
+<div class="fixed bottom-24 right-8 z-50 transform translate-y-12 opacity-0 pointer-events-none transition-all duration-300 bg-surface-container-highest text-on-surface px-space-lg py-space-md rounded-full shadow-2xl flex items-center gap-space-sm" id="toast-banner">
+<span class="material-symbols-outlined text-secondary text-[20px]">task_alt</span>
+<span class="font-label-lg text-label-lg" id="toast-message">Preferences saved to neural profile</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Tab Switching Logic
+  function switchTab(tabId) {
+    const tabs = ['audio', 'language', 'synthesis', 'appearance'];
+    tabs.forEach(t => {
+      const btn = document.getElementById('tab-btn-' + t);
+      if (btn) {
+        if (t === tabId) {
+          btn.className = 'tab-btn active-tab flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-left font-label-lg text-label-lg transition-all whitespace-nowrap bg-primary-container text-on-primary-container shadow-sm';
+        } else {
+          btn.className = 'tab-btn flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-left font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all whitespace-nowrap';
+        }
+      }
+    });
+
+    const targetSection = document.getElementById('section-' + tabId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  // Voice Persona Selector
+  function selectVoice(personaId) {
+    ['mateo', 'sofia', 'alex'].forEach(p => {
+      const card = document.getElementById('voice-' + p);
+      if (!card) return;
+      const icon = card.querySelector('.material-symbols-outlined');
+      if (p === personaId) {
+        card.classList.remove('bg-surface-container-low', 'shadow-sm');
+        card.classList.add('bg-surface-container-high', 'shadow-md');
+        if (icon) {
+          icon.parentElement.classList.remove('hidden', 'text-outline');
+          icon.parentElement.classList.add('text-secondary');
+          icon.style.fontVariationSettings = "'FILL' 1";
+        }
+      } else {
+        card.classList.remove('bg-surface-container-high', 'shadow-md');
+        card.classList.add('bg-surface-container-low', 'shadow-sm');
+        if (icon) {
+          icon.parentElement.classList.add('hidden', 'text-outline');
+          icon.parentElement.classList.remove('text-secondary');
+        }
+      }
+    });
+  }
+
+  // Speed Pill Modulation
+  function setSpeed(speed) {
+    document.getElementById('speed-label').textContent = speed + 'x' + (speed === 1.0 ? ' (Normal)' : '');
+    const pills = document.querySelectorAll('.speed-pill');
+    pills.forEach(pill => {
+      if (pill.textContent.includes(speed + 'x')) {
+        pill.className = 'speed-pill px-space-sm py-space-xs rounded-full text-center flex-1 bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold transition-colors shadow-sm';
+      } else {
+        pill.className = 'speed-pill px-space-sm py-space-xs rounded-full text-center flex-1 bg-surface-container font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors';
+      }
+    });
+  }
+
+  // Pitch Slider Modulation
+  function updatePitch(val) {
+    const numeric = parseInt(val, 10);
+    const label = numeric === 0 ? '0 semitones' : (numeric > 0 ? `+${numeric} semitones` : `${numeric} semitones`);
+    document.getElementById('pitch-label').textContent = label;
+  }
+
+  // VAD Slider Feedback
+  function updateVad(val) {
+    const labelElem = document.getElementById('vad-label');
+    if (val == 1) labelElem.textContent = 'Low (Noisy Rooms)';
+    if (val == 2) labelElem.textContent = 'Balanced (Default)';
+    if (val == 3) labelElem.textContent = 'High (Whispers)';
+  }
+
+  // Theme Visual Selector
+  function selectTheme(theme) {
+    ['dark', 'light', 'system'].forEach(t => {
+      const card = document.getElementById('theme-' + t);
+      if (!card) return;
+      const check = card.querySelector('.material-symbols-outlined');
+      if (t === theme) {
+        card.classList.remove('bg-surface-container-low', 'shadow-sm');
+        card.classList.add('bg-surface-container-high', 'shadow-md');
+        if (check) {
+          check.classList.remove('hidden', 'text-outline');
+          check.classList.add('text-secondary');
+          check.style.fontVariationSettings = "'FILL' 1";
+        }
+      } else {
+        card.classList.remove('bg-surface-container-high', 'shadow-md');
+        card.classList.add('bg-surface-container-low', 'shadow-sm');
+        if (check) {
+          check.classList.add('hidden', 'text-outline');
+          check.classList.remove('text-secondary');
+        }
+      }
+    });
+  }
+
+  // VU Meter Simulation & Microphone Test
+  let testInterval = null;
+  function toggleMicTest() {
+    const btnText = document.getElementById('mic-test-text');
+    const barsContainer = document.getElementById('meter-bars');
+    const bars = barsContainer ? barsContainer.querySelectorAll('div') : [];
+
+    if (testInterval) {
+      clearInterval(testInterval);
+      testInterval = null;
+      btnText.textContent = 'Test Input';
+      bars.forEach((b, i) => {
+        b.style.height = `${(i % 5 + 2) * 4}px`;
+      });
+    } else {
+      btnText.textContent = 'Stop Test';
+      testInterval = setInterval(() => {
+        bars.forEach(b => {
+          const rand = Math.floor(Math.random() * 26) + 6;
+          b.style.height = `${rand}px`;
+        });
+      }, 120);
+    }
+  }
+
+  // Persona audio preview mock
+  function playVoiceTest(event, name) {
+    event.stopPropagation();
+    showToast(`Playing dynamic speech preview for ${name}`);
+  }
+
+  // Toast Trigger
+  function showToast(message) {
+    const toast = document.getElementById('toast-banner');
+    const toastMsg = document.getElementById('toast-message');
+    if (!toast || !toastMsg) return;
+    toastMsg.textContent = message;
+    toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-12');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-12');
+    }, 3200);
+  }
+
+  function saveSettings() {
+    showToast('All VoiceBridge configurations saved successfully');
+  }
+
+  function resetDefaults() {
+    setSpeed(1.0);
+    selectVoice('mateo');
+    selectTheme('dark');
+    document.getElementById('pitch-slider').value = 0;
+    updatePitch(0);
+    document.getElementById('vad-slider').value = 2;
+    updateVad(2);
+    showToast('Restored baseline acoustics and language preferences');
+  }
+</script></main><footer class="w-full bg-surface-container-lowest py-space-xl"><div class="w-full px-gutter-desktop flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md font-bold text-on-surface">VoiceBridge</span><span class="text-on-surface-variant font-body-md text-body-md">• Low-Latency Neural Audio Engine</span></div><div class="text-on-surface-variant font-label-md text-label-md">© 2024 VoiceBridge AI Inc. All rights reserved.</div></div></footer></body></html>

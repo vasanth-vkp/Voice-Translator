@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-bright":"#353944","on-surface":"#dfe2f1","surface-container-highest":"#313540","inverse-on-surface":"#2c303b","surface-variant":"#313540","on-secondary-fixed":"#001f26","primary-container":"#8083ff","tertiary-fixed":"#e0e0ff","error":"#ffb4ab","on-tertiary-fixed":"#000767","background":"#0f131d","on-primary-fixed-variant":"#2f2ebe","on-primary":"#1000a9","tertiary":"#bdc2ff","inverse-primary":"#494bd6","secondary-fixed":"#acedff","inverse-surface":"#dfe2f1","surface-container-high":"#262a35","on-error-container":"#ffdad6","surface-container":"#1c1f2a","primary-fixed-dim":"#c0c1ff","tertiary-container":"#7c87f3","on-primary-container":"#0d0096","primary-fixed":"#e1e0ff","surface-tint":"#c0c1ff","outline-variant":"#464554","secondary-fixed-dim":"#4cd7f6","on-tertiary-fixed-variant":"#2f3aa3","secondary-container":"#03b5d3","on-tertiary-container":"#081486","on-surface-variant":"#c7c4d7","tertiary-fixed-dim":"#bdc2ff","surface":"#0f131d","surface-container-lowest":"#0a0e18","outline":"#908fa0","surface-dim":"#0f131d","secondary":"#4cd7f6","on-secondary":"#003640","on-secondary-fixed-variant":"#004e5c","on-error":"#690005","on-tertiary":"#131e8c","on-background":"#dfe2f1","primary":"#c0c1ff","on-primary-fixed":"#07006c","error-container":"#93000a","surface-container-low":"#171b26","on-secondary-container":"#00424e"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter":"1rem","margin-tablet":"2rem","gutter-desktop":"2rem","space-xl":"2.5rem","space-md":"1rem","gutter-tablet":"1.5rem","space-sm":"0.5rem","margin":"1rem","margin-desktop":"3rem","space-xs":"0.25rem"},"fontFamily":{"headline-lg-mobile":["Inter"],"title-md":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"display-lg":["Inter"],"display-lg-mobile":["Inter"],"body-md":["Inter"],"label-lg":["Inter"],"label-md":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"600"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="h-20 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-max"><img alt="VoiceBridge Brand Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XMdeh45ldBoGYrT2QTcYKnGf5zQNslYA60zDHQ7JIjor8EL_4zXyBdahMwhttNx-zUicHwW31T9DrIqxO35jnlZbOB9iQcfcUQljka6EfWsL6ReUP9Ow2G7TPJD3cUJBCCGMHQ2Y5CbL7I0-A6pqFQyeyEF1W92tPrr-NpeFhjiXILE7KEDZS7OrakoZ9nNwiIiZ6-wYFrrrI0FWytq7zOyEN28H-uMjf-AF3VA_VXqFYkVqpk9iU_rQE"/><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">VoiceBridge</span><span class="hidden sm:inline-flex items-center px-space-sm py-space-xs rounded-full bg-surface-container-high text-secondary font-label-md text-label-md"><span class="w-1.5 h-1.5 rounded-full bg-secondary mr-1.5 animate-pulse"></span>Real-Time Audio</span></div></div><div class="hidden md:flex items-center justify-center flex-1"><nav class="flex items-center p-space-xs rounded-full bg-surface-container-low" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm"><a aria-current="page" class="px-space-lg py-space-xs rounded-full transition-colors bg-primary-container text-on-primary-container font-semibold shadow-sm" data-path="translator" href="#">Translator</a><a class="px-space-lg py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="history" href="#">History</a><a class="px-space-lg py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="flex items-center gap-space-md min-w-max"><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-low text-secondary font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-secondary">bolt</span><span>12ms Ultra-low latency</span></div><button aria-label="Toggle theme" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-secondary hover:bg-surface-container hover:text-on-surface transition-colors shadow-[0_0_12px_rgba(76,215,246,0.2)]" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><button aria-label="Select audio output" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><a aria-label="Settings gear" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="md:hidden flex items-center justify-around py-space-xs bg-surface-container-lowest"><nav class="flex items-center w-full justify-around px-gutter" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a aria-current="page" class="px-space-md py-space-xs rounded-full transition-colors bg-primary-container text-on-primary-container font-semibold" data-path="translator" href="#">Translator</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="history" href="#">History</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<section class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-error/10 blur-[130px] pointer-events-none rounded-full"></div>
+<div class="absolute top-48 right-12 w-[380px] h-[380px] bg-secondary/5 blur-[120px] pointer-events-none rounded-full"></div>
+<div class="w-full px-gutter sm:px-gutter-tablet md:px-gutter-desktop py-space-md flex flex-col gap-space-lg max-w-7xl mx-auto">
+<!-- Language Channel Bar (Continuity preservation) -->
+<div class="w-full bg-surface-container-low/95 backdrop-blur-xl rounded-2xl p-space-sm sm:p-space-md shadow-xl flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm sm:gap-space-md flex-wrap">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Channel A</span>
+<span class="font-title-md text-title-md font-semibold ml-1">English</span>
+<span class="text-on-surface-variant font-label-md text-label-md">(US)</span>
+</div>
+<button aria-label="Swap conversation languages" class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-bright text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-transform active:rotate-180 duration-300" id="swap-lang-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">sync_alt</span>
+</button>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">Channel B</span>
+<span class="font-title-md text-title-md font-semibold ml-1">Japanese</span>
+<span class="text-on-surface-variant font-label-md text-label-md">(日本語)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-error-container/40 text-error font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">mic_off</span>
+<span>Input Offline</span>
+</div>
+<span class="text-on-surface-variant font-label-md text-label-md tracking-wider">CODEC: OPUS 48kHz</span>
+</div>
+</div>
+<!-- Warning Alert Banner -->
+<div class="w-full bg-gradient-to-r from-error-container/70 via-error-container/40 to-surface-container-high/60 rounded-2xl p-space-md sm:p-space-lg shadow-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md transition-all duration-300" id="status-banner">
+<div class="flex items-start gap-space-md">
+<div class="w-11 h-11 rounded-full bg-error flex items-center justify-center text-on-error shrink-0 shadow-[0_0_24px_rgba(255,180,171,0.35)]">
+<span class="material-symbols-outlined text-[24px]">priority_high</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold uppercase tracking-wide text-error">Microphone Permission Blocked</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="text-on-surface-variant font-label-md text-label-md">Hardware Code: E_PERM_DENIED</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-0.5 max-w-3xl">
+              VoiceBridge needs live audio input access to capture speech and provide ultra-low latency synthetic interpretation.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto shrink-0 justify-end">
+<button class="w-full md:w-auto px-space-lg py-space-xs rounded-full bg-error text-on-error font-label-lg text-label-lg hover:opacity-90 active:scale-95 transition-all flex items-center justify-center gap-space-xs shadow-md" id="quick-fix-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">build</span>
+<span>View Browser Fix</span>
+</button>
+</div>
+</div>
+<!-- Main Stage: Asymmetric 12-Column Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Error Card (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container rounded-3xl p-space-lg sm:p-space-xl shadow-2xl flex flex-col gap-space-lg relative overflow-hidden">
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-error/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Hero State Graphic -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-lg">
+<div class="relative shrink-0">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-error-container flex items-center justify-center text-on-error-container shadow-[0_0_36px_rgba(255,180,171,0.3)]">
+<span class="material-symbols-outlined text-[48px] sm:text-[54px]">mic_off</span>
+</div>
+<div class="absolute -inset-2.5 rounded-full bg-error/20 animate-ping pointer-events-none"></div>
+<div class="absolute -inset-5 rounded-full bg-error/10 pointer-events-none"></div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-error-container/60 text-on-error-container font-label-md text-label-md w-max">
+<span class="material-symbols-outlined text-[14px]">sensors_off</span>
+<span>Error: Audio Input Not Available</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+                Unable to access your microphone
+              </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                VoiceBridge cannot capture voice signals because audio input access is blocked in your browser settings, or no active microphone device was detected by the operating system.
+              </p>
+</div>
+</div>
+<!-- Live Device Telemetry Matrix -->
+<div class="grid grid-cols-3 gap-space-sm p-space-md rounded-2xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Device Status</span>
+<span class="font-label-lg text-label-lg text-error font-semibold flex items-center gap-1 mt-0.5">
+<span class="w-2 h-2 rounded-full bg-error"></span> Denied / Blocked
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Audio Interface</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold mt-0.5">WebAudio Core</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Fallback Route</span>
+<span class="font-label-lg text-label-lg text-secondary font-semibold mt-0.5">Keystroke Stream</span>
+</div>
+</div>
+<!-- Step-by-Step Resolution Guide -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md font-semibold text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">tune</span>
+                Resolution steps
+              </h2>
+<span class="font-label-md text-label-md text-on-surface-variant">Takes less than 15s</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-md p-space-md rounded-2xl bg-surface-container-high transition-transform hover:-translate-y-0.5">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-secondary font-label-lg text-label-lg flex items-center justify-center shrink-0 font-bold">
+                  1
+                </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1">
+                    Locate address bar icon
+                    <span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant text-[11px] font-mono">🔒 or 🎙️</span>
+</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+                    Click the permissions tune icon or lock on the left side of your browser URL field.
+                  </p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-2xl bg-surface-container-high transition-transform hover:-translate-y-0.5">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-secondary font-label-lg text-label-lg flex items-center justify-center shrink-0 font-bold">
+                  2
+                </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Switch Microphone to "Allow"</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+                    Toggle microphone permissions from <span class="text-error font-medium">Block</span> to <span class="text-secondary font-medium">Allow</span> for voicebridge.ai.
+                  </p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-2xl bg-surface-container-high transition-transform hover:-translate-y-0.5">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-secondary font-label-lg text-label-lg flex items-center justify-center shrink-0 font-bold">
+                  3
+                </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Re-request hardware link</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+                    Press the primary button below or reload this session to re-initialize the audio pipeline.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Stack -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-xs">
+<button class="px-space-xl py-space-md rounded-full bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-sm shadow-[0_0_28px_rgba(192,193,255,0.4)] active:scale-95 transition-all" id="retry-btn" type="button">
+<span class="material-symbols-outlined text-[20px]" id="retry-icon">refresh</span>
+<span id="retry-label">Try Again / Re-request Access</span>
+</button>
+<button class="px-space-lg py-space-md rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-colors" id="scroll-to-text-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">keyboard</span>
+<span>Use Text Input Instead</span>
+</button>
+<button class="px-space-md py-space-md rounded-full bg-transparent hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-colors" id="test-hardware-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">settings_voice</span>
+<span>Hardware Settings</span>
+</button>
+</div>
+</div>
+<!-- Right Bento Column: Diagnostic Waveform & Hardware Inspector (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Diagnostic Signal Visualizer Card -->
+<div class="w-full bg-surface-container rounded-3xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">graphic_eq</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface">Audio Bus Monitor</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-low text-error font-label-md text-label-md font-mono">0.00 dB • SILENT</span>
+</div>
+<!-- Visualizer SVG Canvas -->
+<div class="w-full h-32 rounded-2xl bg-surface-container-lowest flex items-center justify-center p-space-md relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-error/5 via-transparent to-transparent"></div>
+<svg class="w-full h-full text-outline-variant/40" fill="none" preserveaspectratio="none" viewbox="0 0 320 80">
+<!-- Flatline zero db signal -->
+<path d="M0,40 L90,40 L100,40 L120,40 L140,40 L160,40 L180,40 L220,40 L320,40" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<!-- Error dashed marker -->
+<line stroke="#ffb4ab" stroke-dasharray="4 4" stroke-width="1.5" x1="160" x2="160" y1="10" y2="70"></line>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="px-space-md py-space-xs rounded-full bg-surface-container-high/90 backdrop-blur-md text-error font-label-md text-label-md flex items-center gap-1.5 shadow-md">
+<span class="material-symbols-outlined text-[16px]">volume_off</span>
+<span>Zero Stream Stream Received</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md px-1">
+<span>Host OS Input: Default Audio</span>
+<span class="text-error font-semibold">Permission: REJECTED</span>
+</div>
+</div>
+<!-- Device Selector Drawer / Quick Switch -->
+<div class="w-full bg-surface-container rounded-3xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Available Audio Inputs</span>
+<div class="flex flex-col gap-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">mic</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Internal Mic (Built-in)</span>
+<span class="font-label-md text-label-md text-on-surface-variant">CoreAudio Driver</span>
+</div>
+</div>
+<span class="text-error font-label-md text-label-md uppercase font-semibold">Blocked</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">headset_mic</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">USB Headset / Wireless</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Not detected</span>
+</div>
+</div>
+<span class="text-on-surface-variant font-label-md text-label-md uppercase">Unplugged</span>
+</div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-high flex items-center gap-space-md">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant">
+                Need hands-free speech? Plug in any standard 3.5mm or USB microphone and tap <span class="text-on-surface font-semibold">Try Again</span>.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Fallback Text Translator -->
+<section class="w-full bg-surface-container-high rounded-3xl p-space-lg sm:p-space-xl shadow-2xl flex flex-col gap-space-md relative overflow-hidden -mt-2" id="fallback-console">
+<div class="absolute -left-16 -top-16 w-60 h-60 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[14px]">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">
+                Text Translation Fallback
+              </h2>
+<span class="font-label-md text-label-md text-secondary">Active fallback • No microphone required</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant">Instant Translation: Enabled</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+</div>
+<!-- Split Input/Output Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+<!-- Source Input Panel -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md sm:p-space-lg flex flex-col justify-between gap-space-md min-h-[220px]">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span>ENGLISH SOURCE TEXT</span>
+<span id="char-counter">38 / 500 chars</span>
+</div>
+<div class="relative w-full">
+<textarea class="w-full bg-transparent border-0 outline-none text-on-surface font-body-lg text-body-lg resize-none placeholder:text-outline-variant focus:ring-0" id="source-text-input" placeholder="Type here to translate without microphone..." rows="4">Good morning. Can you guide me to the airport?</textarea>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<button class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-bright text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" id="clear-btn" title="Clear text" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" id="sample-phrase-btn" type="button">
+                  Sample Phrase
+                </button>
+</div>
+<button class="px-space-lg py-space-xs rounded-full bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-lg text-label-lg font-bold flex items-center gap-space-xs transition-all shadow-md" id="translate-now-btn" type="button">
+<span>Translate</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Target Translation Output Panel -->
+<div class="bg-surface-container rounded-2xl p-space-md sm:p-space-lg flex flex-col justify-between gap-space-md min-h-[220px]">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span>JAPANESE NEURAL OUTPUT</span>
+<span class="text-secondary font-mono">LATENCY: 9ms</span>
+</div>
+<p class="text-on-surface font-body-lg text-body-lg leading-relaxed" id="target-translated-text">
+                おはようございます。空港への道を教えていただけますか？
+              </p>
+<span class="text-secondary font-label-md text-label-md tracking-wide" id="target-phonetic">
+                Ohayōgozaimasu. Kūkō e no michi o oshiete itadakemasu ka?
+              </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-container hover:opacity-90 font-label-md text-label-md flex items-center gap-space-xs transition-all" id="speak-output-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+<span>Play TTS Audio</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" id="copy-output-btn" title="Copy Translation" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Neural Verified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Transcripts Log for Immediate Context -->
+<div class="w-full mt-space-xs pt-space-md bg-surface-container-lowest/50 rounded-2xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Conversation Flow (Cached locally)</span>
+<span class="font-label-md text-label-md text-on-surface-variant">2 utterances restored</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-body-md text-body-md text-on-surface">Hello, thank you for meeting me today.</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Channel A • 10:41 AM</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-md">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-body-md text-body-md text-on-surface">こんにちは、お会いできて光栄です。</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Channel B • 10:41 AM</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+<script>
+    (function () {
+      const retryBtn = document.getElementById('retry-btn');
+      const retryIcon = document.getElementById('retry-icon');
+      const retryLabel = document.getElementById('retry-label');
+      const banner = document.getElementById('status-banner');
+      const quickFixBtn = document.getElementById('quick-fix-btn');
+      const scrollToTextBtn = document.getElementById('scroll-to-text-btn');
+      const fallbackConsole = document.getElementById('fallback-console');
+      const sourceInput = document.getElementById('source-text-input');
+      const translateBtn = document.getElementById('translate-now-btn');
+      const charCounter = document.getElementById('char-counter');
+      const clearBtn = document.getElementById('clear-btn');
+      const sampleBtn = document.getElementById('sample-phrase-btn');
+      const targetText = document.getElementById('target-translated-text');
+      const targetPhonetic = document.getElementById('target-phonetic');
+      const speakBtn = document.getElementById('speak-output-btn');
+      const copyBtn = document.getElementById('copy-output-btn');
+      const swapLangBtn = document.getElementById('swap-lang-btn');
+
+      // Retry / Permission simulation
+      if (retryBtn) {
+        retryBtn.addEventListener('click', function () {
+          retryIcon.classList.add('animate-spin');
+          retryLabel.textContent = 'Requesting audio device...';
+          
+          if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ audio: true })
+              .then(function () {
+                retryIcon.classList.remove('animate-spin');
+                retryLabel.textContent = 'Access Granted! Reloading...';
+                setTimeout(function () {
+                  window.location.reload();
+                }, 800);
+              })
+              .catch(function () {
+                setTimeout(function () {
+                  retryIcon.classList.remove('animate-spin');
+                  retryLabel.textContent = 'Permission Denied. Try Again';
+                  if (banner) {
+                    banner.classList.add('ring-2', 'ring-error');
+                    setTimeout(() => banner.classList.remove('ring-2', 'ring-error'), 1200);
+                  }
+                }, 900);
+              });
+          } else {
+            setTimeout(function () {
+              retryIcon.classList.remove('animate-spin');
+              retryLabel.textContent = 'Hardware Not Found. Try Again';
+            }, 800);
+          }
+        });
+      }
+
+      // Quick fix scroll
+      if (quickFixBtn) {
+        quickFixBtn.addEventListener('click', function () {
+          window.scrollTo({ top: 120, behavior: 'smooth' });
+        });
+      }
+
+      // Smooth scroll directly to text console
+      if (scrollToTextBtn && fallbackConsole) {
+        scrollToTextBtn.addEventListener('click', function () {
+          fallbackConsole.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (sourceInput) {
+            setTimeout(() => sourceInput.focus(), 400);
+          }
+        });
+      }
+
+      // Char counter
+      if (sourceInput && charCounter) {
+        sourceInput.addEventListener('input', function () {
+          const len = sourceInput.value.length;
+          charCounter.textContent = len + ' / 500 chars';
+        });
+      }
+
+      // Clear source text
+      if (clearBtn && sourceInput) {
+        clearBtn.addEventListener('click', function () {
+          sourceInput.value = '';
+          if (charCounter) charCounter.textContent = '0 / 500 chars';
+          sourceInput.focus();
+        });
+      }
+
+      // Load sample
+      if (sampleBtn && sourceInput) {
+        sampleBtn.addEventListener('click', function () {
+          sourceInput.value = 'Where is the nearest high-speed railway station?';
+          if (charCounter) charCounter.textContent = sourceInput.value.length + ' / 500 chars';
+          if (targetText && targetPhonetic) {
+            targetText.textContent = '一番近い新幹線の駅はどこですか？';
+            targetPhonetic.textContent = 'Ichiban chikai shinkansen no eki wa doko desu ka?';
+          }
+        });
+      }
+
+      // Translate action simulation
+      if (translateBtn && sourceInput && targetText) {
+        translateBtn.addEventListener('click', function () {
+          const original = sourceInput.value.trim();
+          if (!original) return;
+
+          translateBtn.classList.add('opacity-75');
+          translateBtn.textContent = 'Translating...';
+
+          setTimeout(function () {
+            translateBtn.classList.remove('opacity-75');
+            translateBtn.innerHTML = '<span>Translate</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span>';
+            if (original.toLowerCase().includes('airport')) {
+              targetText.textContent = 'おはようございます。空港への道を教えていただけますか？';
+              targetPhonetic.textContent = 'Ohayōgozaimasu. Kūkō e no michi o oshiete itadakemasu ka?';
+            } else {
+              targetText.textContent = '翻訳完了: ' + original;
+              targetPhonetic.textContent = 'Neural audio playback ready.';
+            }
+          }, 320);
+        });
+      }
+
+      // Play audio TTS simulation
+      if (speakBtn) {
+        speakBtn.addEventListener('click', function () {
+          const originalHTML = speakBtn.innerHTML;
+          speakBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-pulse">volume_up</span><span>Playing Audio...</span>';
+          setTimeout(function () {
+            speakBtn.innerHTML = originalHTML;
+          }, 1400);
+        });
+      }
+
+      // Copy to clipboard
+      if (copyBtn && targetText) {
+        copyBtn.addEventListener('click', function () {
+          navigator.clipboard.writeText(targetText.textContent.trim()).then(function () {
+            const icon = copyBtn.querySelector('.material-symbols-outlined');
+            if (icon) icon.textContent = 'done';
+            setTimeout(function () {
+              if (icon) icon.textContent = 'content_copy';
+            }, 1500);
+          });
+        });
+      }
+
+      // Language Swap Visual
+      if (swapLangBtn) {
+        swapLangBtn.addEventListener('click', function () {
+          swapLangBtn.classList.toggle('rotate-180');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-xl"><div class="w-full px-gutter-desktop flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md font-bold text-on-surface">VoiceBridge</span><span class="text-on-surface-variant font-body-md text-body-md">• Low-Latency Neural Audio Engine</span></div><div class="text-on-surface-variant font-label-md text-label-md">© 2024 VoiceBridge AI Inc. All rights reserved.</div></div></footer></body></html>

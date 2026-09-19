@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-bright":"#353944","on-surface":"#dfe2f1","surface-container-highest":"#313540","inverse-on-surface":"#2c303b","surface-variant":"#313540","on-secondary-fixed":"#001f26","primary-container":"#8083ff","tertiary-fixed":"#e0e0ff","error":"#ffb4ab","on-tertiary-fixed":"#000767","background":"#0a0e17","on-primary-fixed-variant":"#2f2ebe","on-primary":"#1000a9","tertiary":"#bdc2ff","inverse-primary":"#494bd6","secondary-fixed":"#acedff","inverse-surface":"#dfe2f1","surface-container-high":"#262a35","on-error-container":"#ffdad6","surface-container":"#1c1f2a","primary-fixed-dim":"#c0c1ff","tertiary-container":"#7c87f3","on-primary-container":"#0d0096","primary-fixed":"#e1e0ff","surface-tint":"#c0c1ff","outline-variant":"#464554","secondary-fixed-dim":"#4cd7f6","on-tertiary-fixed-variant":"#2f3aa3","secondary-container":"#03b5d3","on-tertiary-container":"#081486","on-surface-variant":"#908fa0","tertiary-fixed-dim":"#bdc2ff","surface":"#0a0e17","surface-container-lowest":"#070a10","outline":"#464554","surface-dim":"#0a0e17","secondary":"#4cd7f6","on-secondary":"#003640","on-secondary-fixed-variant":"#004e5c","on-error":"#690005","on-tertiary":"#131e8c","on-background":"#dfe2f1","primary":"#c0c1ff","on-primary-fixed":"#07006c","error-container":"#93000a","surface-container-low":"#131722","on-secondary-container":"#00424e"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter":"1rem","margin-tablet":"2rem","gutter-desktop":"2rem","space-xl":"2.5rem","space-md":"1rem","gutter-tablet":"1.5rem","space-sm":"0.5rem","margin":"1rem","margin-desktop":"3rem","space-xs":"0.25rem"},"fontFamily":{"headline-lg-mobile":["Inter"],"title-md":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"display-lg":["Inter"],"display-lg-mobile":["Inter"],"body-md":["Inter"],"label-lg":["Inter"],"label-md":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"600"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-secondary/20 selection:text-secondary" style='font-family: "Plus Jakarta Sans", sans-serif;'><header class="fixed top-0 w-full z-50 bg-[#0a0e17]/80 backdrop-blur-xl border-b border-white/[0.04]"><div class="w-full px-gutter-desktop flex items-center justify-between gap-space-md h-14 max-w-7xl mx-auto"><div class="flex items-center gap-space-md min-w-max"><img alt="VoiceBridge Brand Icon" class="h-7 w-auto object-contain opacity-95" src="https://lh3.googleusercontent.com/aida/AEtjO1XMdeh45ldBoGYrT2QTcYKnGf5zQNslYA60zDHQ7JIjor8EL_4zXyBdahMwhttNx-zUicHwW31T9DrIqxO35jnlZbOB9iQcfcUQljka6EfWsL6ReUP9Ow2G7TPJD3cUJBCCGMHQ2Y5CbL7I0-A6pqFQyeyEF1W92tPrr-NpeFhjiXILE7KEDZS7OrakoZ9nNwiIiZ6-wYFrrrI0FWytq7zOyEN28H-uMjf-AF3VA_VXqFYkVqpk9iU_rQE"/><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md font-semibold text-on-surface tracking-tight" style="font-family: Outfit, sans-serif; letter-spacing: -0.02em;">VoiceBridge</span><span class="hidden sm:inline-flex items-center text-xs text-secondary/80 font-medium tracking-wide ml-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary mr-2 animate-pulse"></span>Real-Time Audio</span></div></div><div class="flex items-center gap-space-md min-w-max"><button aria-label="Toggle theme" class="w-9 h-9 rounded-full bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.06] flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-all duration-200" type="button"><span class="material-symbols-outlined text-[18px]">dark_mode</span></button></div></div></header><main class="w-full pt-16 bg-background min-h-screen flex flex-col justify-between"><div class="flex flex-col w-full px-gutter md:px-gutter-tablet lg:px-gutter-desktop max-w-5xl mx-auto space-y-6 py-6">
+<!-- MINIMAL ZEN LANGUAGE PICKER BAR -->
+<section class="w-full">
+<div class="backdrop-blur-md bg-white/[0.02] border border-white/[0.06] rounded-2xl px-5 py-3 flex items-center justify-between gap-4">
+<!-- Source Language Selection -->
+<div class="flex items-center gap-3 min-w-0 cursor-pointer group py-1">
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-medium">Source</span>
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface font-medium text-sm group-hover:text-primary transition-colors">English</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] group-hover:translate-y-0.5 transition-transform">expand_more</span>
+</div>
+</div>
+<!-- Subtle Center Swap Action -->
+<button aria-label="Swap source and target languages" class="w-8 h-8 rounded-full bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.06] text-on-surface-variant hover:text-secondary flex items-center justify-center transition-all duration-300 transform active:scale-90 hover:rotate-180 shrink-0" id="swap-lang-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</button>
+<!-- Target Language Selection -->
+<div class="flex items-center gap-3 min-w-0 cursor-pointer group py-1 justify-end">
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-medium">Target</span>
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface font-medium text-sm group-hover:text-primary transition-colors">Spanish</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] group-hover:translate-y-0.5 transition-transform">expand_more</span>
+</div>
+</div>
+</div>
+</section>
+<!-- VARIANT 1: ULTRA-MINIMALIST ZEN TRANSLATION CARD -->
+<section class="w-full">
+<div class="backdrop-blur-md bg-white/[0.02] border border-white/[0.06] rounded-3xl p-8 md:p-10 shadow-[0_8px_32px_rgba(0,0,0,0.25)] transition-all duration-300 hover:border-white/[0.1] relative">
+<!-- Inbound Original Section -->
+<div class="group relative pb-8 border-b border-white/[0.05]">
+<div class="flex items-center justify-between mb-3">
+<span class="text-xs uppercase tracking-widest text-on-surface-variant/80 font-medium">Original</span>
+<!-- Subtle Floating Actions -->
+<div class="flex items-center gap-1 opacity-60 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded-full hover:bg-white/[0.06] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Listen original" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+<button class="w-8 h-8 rounded-full hover:bg-white/[0.06] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Edit text" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</div>
+<p class="text-on-surface font-light text-2xl md:text-3xl leading-relaxed tracking-tight select-text" id="transcript-source-text" style="font-family: Outfit, sans-serif; font-weight: 300;">
+      "Could you please tell me how to get to the modern art museum from here? And what time does it close today?"
+    </p>
+</div>
+<!-- Outbound Translation Section -->
+<div class="group relative pt-8">
+<div class="flex items-center justify-between mb-3">
+<span class="text-xs uppercase tracking-widest text-secondary/70 font-medium">Translation</span>
+<!-- Subtle Floating Actions -->
+<div class="flex items-center gap-1.5 opacity-70 group-hover:opacity-100 transition-opacity">
+<!-- Minimal Play Button -->
+<button class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-secondary hover:text-secondary-fixed transition-all text-xs font-medium" id="tts-play-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span id="tts-btn-text">Listen</span>
+<div class="hidden items-end gap-0.5 h-3 pl-1" id="tts-audio-bars">
+<span class="w-0.5 bg-secondary rounded-full h-full animate-bounce"></span>
+<span class="w-0.5 bg-secondary rounded-full h-2 animate-bounce" style="animation-delay: 150ms;"></span>
+<span class="w-0.5 bg-secondary rounded-full h-2.5 animate-bounce" style="animation-delay: 300ms;"></span>
+</div>
+</button>
+<!-- Slow Playback Minimal Icon -->
+<button class="w-8 h-8 rounded-full hover:bg-white/[0.06] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Slow playback (0.8x)" type="button">
+<span class="material-symbols-outlined text-[16px]">slow_motion_video</span>
+</button>
+<!-- Copy Button with Toast -->
+<button aria-label="Copy translated text" class="w-8 h-8 rounded-full hover:bg-white/[0.06] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors relative" id="copy-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span class="absolute -top-7 px-2 py-0.5 bg-surface-bright text-on-surface rounded-md text-[11px] font-medium opacity-0 pointer-events-none transition-opacity shadow-sm" id="copy-toast">Copied</span>
+</button>
+<!-- Share Action -->
+<button aria-label="Share transcript" class="w-8 h-8 rounded-full hover:bg-white/[0.06] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" id="export-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">ios_share</span>
+</button>
+</div>
+</div>
+<p class="text-primary font-normal text-2xl md:text-3xl leading-relaxed tracking-tight select-text" id="target-translation-text" style="font-family: Outfit, sans-serif;">
+      "¿Podría decirme cómo llegar al museo de arte moderno desde aquí? ¿Y a qué hora cierra hoy?"
+    </p>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE MICROPHONE HERO CONSOLE -->
+<section class="backdrop-blur-md bg-white/[0.02] border border-white/[0.06] rounded-3xl p-6 md:p-8 flex flex-col items-center justify-center text-center relative overflow-hidden">
+<!-- State Switcher Tabs (For Reviewer Exploration) -->
+<div class="flex items-center gap-1 p-1 bg-white/[0.03] border border-white/[0.04] rounded-full mb-4 overflow-x-auto max-w-full">
+<span class="text-on-surface-variant text-xs px-3 hidden sm:inline font-medium">State:</span>
+<button class="px-3 py-1 rounded-full text-xs bg-secondary/15 text-secondary font-medium transition-all" id="tab-listening" onclick="setMicState('listening')">
+        Listening
+      </button>
+<button class="px-3 py-1 rounded-full text-xs text-on-surface-variant hover:text-on-surface transition-all font-medium" id="tab-processing" onclick="setMicState('processing')">
+        Processing
+      </button>
+<button class="px-3 py-1 rounded-full text-xs text-on-surface-variant hover:text-on-surface transition-all font-medium" id="tab-idle" onclick="setMicState('idle')">
+        Idle
+      </button>
+<button class="px-3 py-1 rounded-full text-xs text-on-surface-variant hover:text-on-surface transition-all font-medium" id="tab-error" onclick="setMicState('error')">
+        Error
+      </button>
+</div>
+<!-- MAIN CENTRAL AUDIO VISUALIZER & MIC BUTTON -->
+<div class="relative flex items-center justify-center my-4 py-2">
+<div class="absolute w-52 h-52 rounded-full bg-secondary/10 animate-ping duration-1000" id="ring-pulse-1"></div>
+<div class="absolute w-40 h-40 rounded-full bg-primary/20 animate-pulse" id="ring-pulse-2"></div>
+<div class="absolute w-32 h-32 rounded-full bg-secondary/15 blur-md pointer-events-none"></div>
+<button aria-label="Toggle live voice translation" class="relative z-10 w-24 h-24 rounded-full bg-gradient-to-tr from-secondary via-secondary to-primary flex items-center justify-center text-on-primary shadow-[0_0_40px_rgba(76,215,246,0.45)] transition-all duration-300 transform active:scale-95 focus:outline-none focus:ring-4 focus:ring-secondary/30 border border-white/20" id="hero-mic-button" type="button">
+<span class="material-symbols-outlined text-[44px]" id="mic-icon">mic</span>
+<svg class="hidden animate-spin h-10 w-10 text-on-primary" fill="none" id="processing-spinner" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+</svg>
+</button>
+</div>
+<!-- DYNAMIC AUDIO WAVEFORM (LISTENING STATE) -->
+<div class="flex items-center justify-center gap-1.5 h-8 my-2 w-full max-w-xs" id="waveform-visualizer">
+<span class="w-1 bg-secondary/80 rounded-full h-2.5 animate-pulse"></span>
+<span class="w-1 bg-secondary rounded-full h-5 animate-pulse" style="animation-delay: 80ms;"></span>
+<span class="w-1 bg-primary rounded-full h-7 animate-pulse" style="animation-delay: 150ms;"></span>
+<span class="w-1 bg-secondary rounded-full h-4 animate-pulse" style="animation-delay: 220ms;"></span>
+<span class="w-1 bg-primary-container rounded-full h-8 animate-pulse" style="animation-delay: 90ms;"></span>
+<span class="w-1 bg-secondary rounded-full h-6 animate-pulse" style="animation-delay: 180ms;"></span>
+<span class="w-1 bg-secondary rounded-full h-8 animate-pulse" style="animation-delay: 50ms;"></span>
+<span class="w-1 bg-primary rounded-full h-5 animate-pulse" style="animation-delay: 120ms;"></span>
+<span class="w-1 bg-secondary rounded-full h-3 animate-pulse" style="animation-delay: 200ms;"></span>
+<span class="w-1 bg-secondary/70 rounded-full h-1.5"></span>
+</div>
+<!-- Live Telemetry Status & Decibel Meter -->
+<div class="space-y-1" id="status-container">
+<div class="flex items-center justify-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping" id="status-dot"></span>
+<span class="text-on-surface font-medium text-sm" id="status-headline" style="font-family: Outfit, sans-serif;">Listening... speak naturally in any language</span>
+</div>
+<div class="flex items-center justify-center gap-2 text-on-surface-variant text-xs" id="db-meter">
+<span>Input Gain: <strong class="text-secondary/90 font-medium">-18.4 dB</strong></span>
+<span>•</span>
+<span>Latency: <strong class="text-secondary/90 font-medium">11.8 ms</strong></span>
+</div>
+</div>
+<!-- ERROR STATE ALERT CONTAINER -->
+<div class="hidden mt-4 w-full max-w-md bg-error-container/40 border border-error/20 text-on-error-container p-3.5 rounded-2xl flex items-center justify-between shadow-lg" id="error-alert-banner">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-error">error</span>
+<div class="text-left">
+<p class="text-xs font-semibold text-on-error-container">Speech recognition interrupted</p>
+<p class="text-[11px] opacity-80">Stream timed out. Check connection.</p>
+</div>
+</div>
+<button class="px-3 py-1 bg-error text-surface font-medium text-xs rounded-full hover:bg-white transition-colors shrink-0" onclick="setMicState('listening')">
+        Retry
+      </button>
+</div>
+<p class="text-on-surface-variant/60 text-xs mt-2 font-normal">
+      Hold <kbd class="px-1.5 py-0.5 rounded bg-white/[0.06] text-on-surface-variant font-mono text-[11px]">Space</kbd> to talk anytime
+    </p>
+</section>
+<!-- TEXT-INPUT FALLBACK FIELD -->
+<section class="w-full">
+<div class="backdrop-blur-md bg-white/[0.02] border border-white/[0.06] rounded-2xl p-2 px-4 flex flex-col md:flex-row items-center justify-between gap-2 transition-all focus-within:border-white/[0.15]">
+<div class="flex items-center gap-3 w-full min-w-0">
+<span class="material-symbols-outlined text-on-surface-variant/70 text-[20px] shrink-0">keyboard</span>
+<input class="w-full bg-transparent text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none text-sm py-1.5" id="manual-text-input" placeholder="Type text here to translate... (Press Enter ↵)" type="text" value=""/>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto gap-3 shrink-0">
+<span class="text-on-surface-variant/60 text-xs whitespace-nowrap" id="char-counter">0 / 1,000</span>
+<button class="h-8 px-4 rounded-full bg-white/[0.06] hover:bg-white/[0.1] text-on-surface hover:text-white text-xs font-medium flex items-center gap-1.5 transition-all active:scale-95 shrink-0" id="translate-manual-btn" type="button">
+<span>Translate</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- RECENT HISTORY (CLEAN ACCORDION) -->
+<section class="w-full backdrop-blur-md bg-white/[0.02] border border-white/[0.06] rounded-2xl p-4 transition-all">
+<div class="flex items-center justify-between cursor-pointer select-none" id="history-header" onclick="toggleHistoryPanel()">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">history</span>
+<span class="text-on-surface font-medium text-sm">Recent Translations</span>
+<span class="text-on-surface-variant text-xs">(3)</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-0.5 rounded-full text-on-surface-variant hover:text-error hover:bg-white/[0.04] text-xs transition-colors" onclick="event.stopPropagation(); clearAllHistory();" type="button">
+          Clear
+        </button>
+<div class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface-variant transition-transform duration-300 transform rotate-180" id="history-chevron">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<div class="mt-3 space-y-2 block" id="history-content-drawer">
+<!-- History Item 1 -->
+<div class="bg-white/[0.015] hover:bg-white/[0.04] border border-white/[0.03] transition-colors p-3.5 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="space-y-0.5 min-w-0">
+<div class="flex items-center gap-2 text-xs text-on-surface-variant/70">
+<span class="text-secondary/80 font-medium">EN → ES</span>
+<span>• 2 mins ago</span>
+</div>
+<p class="text-on-surface text-sm font-normal">"Where is the nearest train station?"</p>
+<p class="text-primary text-sm font-light">"¿Dónde está la estación de tren más cercana?"</p>
+</div>
+<div class="flex items-center gap-1 shrink-0 self-end md:self-center opacity-70 hover:opacity-100 transition-opacity">
+<button class="w-7 h-7 rounded-full hover:bg-white/[0.06] text-on-surface flex items-center justify-center transition-colors" onclick="loadHistoryItem('Where is the nearest train station?', '¿Dónde está la estación de tren más cercana?')" title="Restore" type="button">
+<span class="material-symbols-outlined text-[16px]">replay</span>
+</button>
+<button class="w-7 h-7 rounded-full hover:bg-white/[0.06] text-on-surface flex items-center justify-center transition-colors" title="Listen" type="button">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+</button>
+<button class="w-7 h-7 rounded-full hover:bg-white/[0.06] text-on-surface flex items-center justify-center transition-colors" title="Copy" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- History Item 2 -->
+<div class="bg-white/[0.015] hover:bg-white/[0.04] border border-white/[0.03] transition-colors p-3.5 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="space-y-0.5 min-w-0">
+<div class="flex items-center gap-2 text-xs text-on-surface-variant/70">
+<span class="text-secondary/80 font-medium">EN → ES</span>
+<span>• 12 mins ago</span>
+</div>
+<p class="text-on-surface text-sm font-normal">"Thank you so much for your hospitality!"</p>
+<p class="text-primary text-sm font-light">"¡Muchas gracias por su hospitalidad!"</p>
+</div>
+<div class="flex items-center gap-1 shrink-0 self-end md:self-center opacity-70 hover:opacity-100 transition-opacity">
+<button class="w-7 h-7 rounded-full hover:bg-white/[0.06] text-on-surface flex items-center justify-center transition-colors" onclick="loadHistoryItem('Thank you so much for your hospitality!', '¡Muchas gracias por su hospitalidad!')" title="Restore" type="button">
+<span class="material-symbols-outlined text-[16px]">replay</span>
+</button>
+<button class="w-7 h-7 rounded-full hover:bg-white/[0.06] text-on-surface flex items-center justify-center transition-colors" title="Listen" type="button">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+</button>
+<button class="w-7 h-7 rounded-full hover:bg-white/[0.06] text-on-surface flex items-center justify-center transition-colors" title="Copy" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- History Item 3 -->
+<div class="bg-white/[0.015] hover:bg-white/[0.04] border border-white/[0.03] transition-colors p-3.5 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="space-y-0.5 min-w-0">
+<div class="flex items-center gap-2 text-xs text-on-surface-variant/70">
+<span class="text-secondary/80 font-medium">EN → ES</span>
+<span>• 1 hour ago</span>
+</div>
+<p class="text-on-surface text-sm font-normal">"Can I pay with credit card?"</p>
+<p class="text-primary text-sm font-light">"¿Puedo pagar con tarjeta de crédito?"</p>
+</div>
+<div class="flex items-center gap-1 shrink-0 self-end md:self-center opacity-70 hover:opacity-100 transition-opacity">
+<button class="w-7 h-7 rounded-full hover:bg-white/[0.06] text-on-surface flex items-center justify-center transition-colors" onclick="loadHistoryItem('Can I pay with credit card?', '¿Puedo pagar con tarjeta de crédito?')" title="Restore" type="button">
+<span class="material-symbols-outlined text-[16px]">replay</span>
+</button>
+<button class="w-7 h-7 rounded-full hover:bg-white/[0.06] text-on-surface flex items-center justify-center transition-colors" title="Listen" type="button">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+</button>
+<button class="w-7 h-7 rounded-full hover:bg-white/[0.06] text-on-surface flex items-center justify-center transition-colors" title="Copy" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // State showcase switcher
+  function setMicState(state) {
+    const tabs = ['listening', 'processing', 'idle', 'error'];
+    tabs.forEach(t => {
+      const btn = document.getElementById('tab-' + t);
+      if (btn) {
+        if (t === state) {
+          btn.className = "px-3 py-1 rounded-full text-xs bg-secondary/15 text-secondary font-medium transition-all";
+        } else {
+          btn.className = "px-3 py-1 rounded-full text-xs text-on-surface-variant hover:text-on-surface transition-all font-medium";
+        }
+      }
+    });
+
+    const micBtn = document.getElementById('hero-mic-button');
+    const micIcon = document.getElementById('mic-icon');
+    const spinner = document.getElementById('processing-spinner');
+    const ring1 = document.getElementById('ring-pulse-1');
+    const ring2 = document.getElementById('ring-pulse-2');
+    const waveform = document.getElementById('waveform-visualizer');
+    const statusDot = document.getElementById('status-dot');
+    const statusHeadline = document.getElementById('status-headline');
+    const dbMeter = document.getElementById('db-meter');
+    const errorAlert = document.getElementById('error-alert-banner');
+
+    if (state === 'listening') {
+      micBtn.className = "relative z-10 w-24 h-24 rounded-full bg-gradient-to-tr from-secondary via-secondary to-primary flex items-center justify-center text-on-primary shadow-[0_0_40px_rgba(76,215,246,0.45)] transition-all duration-300 transform active:scale-95 focus:outline-none border border-white/20";
+      micIcon.classList.remove('hidden');
+      spinner.classList.add('hidden');
+      ring1.classList.remove('hidden');
+      ring2.classList.remove('hidden');
+      waveform.classList.remove('hidden');
+      errorAlert.classList.add('hidden');
+      statusDot.className = "w-2 h-2 rounded-full bg-secondary animate-ping";
+      statusHeadline.textContent = "Listening... speak naturally in any language";
+      dbMeter.classList.remove('hidden');
+    } else if (state === 'processing') {
+      micBtn.className = "relative z-10 w-24 h-24 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-[0_0_30px_rgba(128,131,255,0.4)] transition-all duration-300 border border-white/10";
+      micIcon.classList.add('hidden');
+      spinner.classList.remove('hidden');
+      ring1.classList.add('hidden');
+      ring2.classList.remove('hidden');
+      waveform.classList.add('hidden');
+      errorAlert.classList.add('hidden');
+      statusDot.className = "w-2 h-2 rounded-full bg-primary-container animate-pulse";
+      statusHeadline.textContent = "Translating speech with Neural Voice...";
+      dbMeter.classList.add('hidden');
+    } else if (state === 'idle') {
+      micBtn.className = "relative z-10 w-24 h-24 rounded-full bg-white/[0.04] hover:bg-white/[0.08] border border-white/[0.08] flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-all duration-300";
+      micIcon.classList.remove('hidden');
+      spinner.classList.add('hidden');
+      ring1.classList.add('hidden');
+      ring2.classList.add('hidden');
+      waveform.classList.add('hidden');
+      errorAlert.classList.add('hidden');
+      statusDot.className = "w-2 h-2 rounded-full bg-on-surface-variant/40";
+      statusHeadline.textContent = "Idle • Tap mic or press Space to translate";
+      dbMeter.classList.add('hidden');
+    } else if (state === 'error') {
+      micBtn.className = "relative z-10 w-24 h-24 rounded-full bg-error-container text-on-error-container flex items-center justify-center shadow-lg transition-all duration-300 border border-error/30";
+      micIcon.classList.remove('hidden');
+      spinner.classList.add('hidden');
+      ring1.classList.add('hidden');
+      ring2.classList.add('hidden');
+      waveform.classList.add('hidden');
+      errorAlert.classList.remove('hidden');
+      statusDot.className = "w-2 h-2 rounded-full bg-error";
+      statusHeadline.textContent = "Translation offline";
+      dbMeter.classList.add('hidden');
+    }
+  }
+
+  // TTS Playback simulation
+  const ttsPlayBtn = document.getElementById('tts-play-btn');
+  const ttsAudioBars = document.getElementById('tts-audio-bars');
+  const ttsBtnText = document.getElementById('tts-btn-text');
+  let isPlaying = false;
+  if (ttsPlayBtn) {
+    ttsPlayBtn.addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      if (isPlaying) {
+        ttsAudioBars.classList.remove('hidden');
+        ttsAudioBars.classList.add('flex');
+        ttsBtnText.textContent = "Playing";
+        setTimeout(() => {
+          isPlaying = false;
+          ttsAudioBars.classList.add('hidden');
+          ttsAudioBars.classList.remove('flex');
+          ttsBtnText.textContent = "Listen";
+        }, 4000);
+      } else {
+        ttsAudioBars.classList.add('hidden');
+        ttsAudioBars.classList.remove('flex');
+        ttsBtnText.textContent = "Listen";
+      }
+    });
+  }
+
+  // Copy Translation action
+  const copyBtn = document.getElementById('copy-btn');
+  const copyToast = document.getElementById('copy-toast');
+  if (copyBtn && copyToast) {
+    copyBtn.addEventListener('click', () => {
+      const text = document.getElementById('target-translation-text').innerText;
+      navigator.clipboard.writeText(text).catch(() => {});
+      copyToast.classList.remove('opacity-0');
+      copyToast.classList.add('opacity-100');
+      setTimeout(() => {
+        copyToast.classList.remove('opacity-100');
+        copyToast.classList.add('opacity-0');
+      }, 1500);
+    });
+  }
+
+  // Manual input character count & submit
+  const manualInput = document.getElementById('manual-text-input');
+  const charCounter = document.getElementById('char-counter');
+  const translateManualBtn = document.getElementById('translate-manual-btn');
+
+  if (manualInput) {
+    manualInput.addEventListener('input', (e) => {
+      charCounter.textContent = `${e.target.value.length} / 1,000`;
+    });
+
+    manualInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        triggerManualTranslation();
+      }
+    });
+  }
+
+  if (translateManualBtn) {
+    translateManualBtn.addEventListener('click', triggerManualTranslation);
+  }
+
+  function triggerManualTranslation() {
+    const text = manualInput.value.trim();
+    if (!text) return;
+    setMicState('processing');
+    setTimeout(() => {
+      document.getElementById('transcript-source-text').textContent = `"${text}"`;
+      document.getElementById('target-translation-text').textContent = `"${text} (Traducido al instante)"`;
+      manualInput.value = '';
+      charCounter.textContent = '0 / 1,000';
+      setMicState('listening');
+    }, 900);
+  }
+
+  // History Drawer Collapse
+  let historyOpen = true;
+  function toggleHistoryPanel() {
+    const drawer = document.getElementById('history-content-drawer');
+    const chevron = document.getElementById('history-chevron');
+    historyOpen = !historyOpen;
+    if (historyOpen) {
+      drawer.classList.remove('hidden');
+      chevron.classList.add('rotate-180');
+    } else {
+      drawer.classList.add('hidden');
+      chevron.classList.remove('rotate-180');
+    }
+  }
+
+  function clearAllHistory() {
+    const drawer = document.getElementById('history-content-drawer');
+    drawer.innerHTML = `<div class="py-4 text-center text-on-surface-variant/60 text-xs">All recent translation records cleared.</div>`;
+  }
+
+  function loadHistoryItem(src, trg) {
+    document.getElementById('transcript-source-text').textContent = `"${src}"`;
+    document.getElementById('target-translation-text').textContent = `"${trg}"`;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Swap language button animation
+  const swapBtn = document.getElementById('swap-lang-btn');
+  if (swapBtn) {
+    swapBtn.addEventListener('click', () => {
+      const srcText = document.getElementById('transcript-source-text').textContent;
+      const trgText = document.getElementById('target-translation-text').textContent;
+      document.getElementById('transcript-source-text').textContent = trgText;
+      document.getElementById('target-translation-text').textContent = srcText;
+    });
+  }
+</script></main><footer class="w-full border-t border-white/[0.04] py-4 mt-auto"><div class="w-full px-gutter-desktop max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-on-surface-variant/60"><div class="flex items-center gap-2"><span class="font-semibold text-on-surface-variant">VoiceBridge</span><span>• Neural Real-Time Audio Translation</span></div><div>© 2024 VoiceBridge AI. Distraction-Free Audio.</div></div></footer>
+</body></html>
